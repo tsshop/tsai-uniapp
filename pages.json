@@ -1,0 +1,208 @@
+{
+	"pages": [
+		//
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none",
+					"softinputNavBar": "none",
+					"bounce": "none"
+				},
+				"backgroundColor": "#FFFFFF"
+
+			}
+		},
+		{
+			"path": "pages/h5/h5",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "default",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}
+
+
+		, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/feedback",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/share-list",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/buy-list",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/history",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/share",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/questions/questions",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"softinputMode": "adjustResize",
+					"softinputNavBar": "none",
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/userinfo-edit",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/setting",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/user/password",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/questions/template",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"softinputMode": "adjustResize",
+					"softinputNavBar": "none",
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/template-list/template-list",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+
+					"bounce": "none"
+				}
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Ai小助手",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"app-plus": {
+			"background": "#FFFFFF"
+		},
+		"onReachBottomDistance": 100,
+		"rpxCalcMaxDeviceWidth": 500
+		// "rpxCalcBaseDeviceWidth": 750
+		// "rpxCalcIncludeWidth": 750
+	},
+	"tabBar": {
+		"height": "0",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"visible": false
+
+		}, {
+			"pagePath": "pages/questions/questions",
+			"visible": false
+		}]
+	}
+
+}

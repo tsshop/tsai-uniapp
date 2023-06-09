@@ -1,0 +1,217 @@
+{
+    "name" : "AI小助手",
+    "appid" : "__UNI__867FDD0",
+    "description" : "Ai小助手 - 智能 - 问答",
+    "versionName" : "1.0.0",
+    "versionCode" : 100,
+    "transformPx" : false,
+    "app-plus" : {
+        /* 5+App特有相关 */
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Speech" : {},
+            "Share" : {},
+            "Geolocation" : {},
+            "Maps" : {},
+            "Payment" : {}
+        },
+        "safearea" : {
+            "background" : "#FFFFFF",
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "schemes" : "aihelper",
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ]
+            },
+            "ios" : {
+                "urltypes" : "aihelper",
+                "plistcmds" : [
+                    "Set :NSMicrophoneUsageDescription 获取语音权限以进行语音输入",
+                    "Set :NSPhotoLibraryUsageDescription 从相册选择图片作为用户头像",
+                    "Set :NSCameraUsageDescription 用户使用相机拍摄图片作为自定义头像",
+                    "Set :NSPhotoLibraryAddUsageDescription 保存图片到相册"
+                ],
+                "privacyDescription" : {
+                    "NSLocationWhenInUseUsageDescription" : "该应用需要你的地理位置，以便为您提供当前位置信息",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "该应用需要持续获取用户地理位置，以便为您提供当前位置信息",
+                    "NSPhotoLibraryUsageDescription" : "该应用需要读取你的相册，以便为您编辑上传自定义头像",
+                    "NSPhotoLibraryAddUsageDescription" : "该应用需要读取你的相册，以便为您编辑上传自定义头像",
+                    "NSCameraUsageDescription" : "该应用需要你的相机，以便您拍摄图片编辑上传自定义头像",
+                    "NSMicrophoneUsageDescription" : "该应用需要使用你的麦克风，以便口语练习测评获取您的声音",
+                    "NSLocationAlwaysUsageDescription" : "该应用需要你的地理位置，以便为您提供当前位置信息",
+                    "NSCalendarsUsageDescription" : "该应用需要获取你的日历，以便为您提供学习记录，更好的体验",
+                    "NSRemindersUsageDescription" : "该应用需要获取你的提醒事项，以便为您提供学习记录，更好的体验"
+                },
+                "dSYMs" : false,
+                "UIBackgroundModes" : "",
+                "idfa" : false
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "payment" : {
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "wx8550afab022d56fa",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "ad" : {},
+                "speech" : {},
+                "share" : {},
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "b422b9a07441f38cb809702502bf9859",
+                        "appkey_android" : "b422b9a07441f38cb809702502bf9859"
+                    }
+                },
+                "push" : {},
+                "geolocation" : {
+                    "amap" : {
+                        "__platform__" : [ "android" ],
+                        "appkey_ios" : "b422b9a07441f38cb809702502bf9859",
+                        "appkey_android" : "b422b9a07441f38cb809702502bf9859"
+                    },
+                    "system" : {
+                        "__platform__" : [ "android" ]
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : "",
+                    "xxxhdpi" : ""
+                },
+                "ios" : {
+                    "appstore" : "",
+                    "ipad" : {
+                        "app" : "",
+                        "app@2x" : "",
+                        "notification" : "",
+                        "notification@2x" : "",
+                        "proapp@2x" : "",
+                        "settings" : "",
+                        "settings@2x" : "",
+                        "spotlight" : "",
+                        "spotlight@2x" : ""
+                    },
+                    "iphone" : {
+                        "app@2x" : "",
+                        "app@3x" : "",
+                        "notification@2x" : "",
+                        "notification@3x" : "",
+                        "settings@2x" : "",
+                        "settings@3x" : "",
+                        "spotlight@2x" : "",
+                        "spotlight@3x" : ""
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "android" : {
+                    "hdpi" : "C:/Users/H/Desktop/项目图片/QQ截图20230114161841.png",
+                    "xhdpi" : "C:/Users/H/Desktop/项目图片/QQ截图20230114161841.png",
+                    "xxhdpi" : "C:/Users/H/Desktop/项目图片/QQ截图20230114161841.png"
+                },
+                "useOriginalMsgbox" : true
+            }
+        },
+        "nativePlugins" : {}
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true,
+            "postcss" : true,
+            "es6" : true
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "你的位置信息将用于小程序位置接口的效果展示"
+            }
+        },
+        "requiredPrivateInfos" : [ "getLocation", "chooseLocation" ]
+    },
+    "h5" : {
+        "devServer" : {
+            // "proxy" : {
+            // "/api" : {
+            //     // "target" : "http://192.168.1.4:9023/api",
+            //     // "target" : "http://120.55.43.19:9026/api",
+            //     "target" : "https://happy.treemong.cn/api",
+            //     "changeOrigin" : true,
+            //     "ws" : true,
+            //     "pathRewrite" : {
+            //         "^/api" : ""
+            //     }
+            // }
+            // },
+            "https" : false,
+            "port" : 80
+        },
+        "router" : {
+            "base" : "./",
+            "mode" : "hash"
+        },
+        "title" : "AI小助手",
+        "sdkConfigs" : {
+            "maps" : {}
+        },
+        "template" : "./index.html",
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        }
+    },
+    "fallbackLocale" : "zh-Hans",
+    "mp-toutiao" : {
+        "setting" : {
+            "urlCheck" : false
+        }
+    }
+}

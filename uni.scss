@@ -1,0 +1,137 @@
+@import '@/uni_modules/uni-scss/variables.scss';
+
+.uni-navbar--border[data-v-6bda1a90] {
+    border-bottom-width: 0px !important;
+    border-bottom-style: solid;
+    border-bottom-color: #eee;
+}
+.uni-navbar--shadow[data-v-6bda1a90] {
+    box-shadow: 0 0px 0px #ccc !important;
+}
+
+uni-toast {
+	z-index: 10000;
+	font-family: Monospaced Number, Chinese Quote, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+	
+}
+/* #ifdef MP-WEIXIN || APP-PLUS */
+		::-webkit-scrollbar {
+		    display: none;
+		    width: 0 !important;
+		    height: 0 !important;
+		    -webkit-appearance: none;
+		    background: transparent;
+		    color: transparent;
+		  }
+	/* #endif */
+	
+	/* 解决H5 的问题 */
+	/* #ifdef H5 */
+	    uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
+	    	/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+			display: none;
+		    width: 0 !important;
+		    height: 0 !important;
+		    -webkit-appearance: none;
+		    background: transparent;
+		    color: transparent;
+	    }
+	/* #endif */
+.click-bg{
+	background-color: #f1f1f1;
+}
+.share-clear {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0);
+	box-sizing: border-box !important;
+	box-shadow: none;
+}
+.share-clear::after {
+	display: none !important;
+}
+.br-24{
+	border-radius: 14rpx;
+}
+.click-o{
+	opacity: 0.9;
+}
+.br-20{
+	border-radius: 20rpx;
+}
+.flex-content{
+	flex:1;
+	margin-left: 28rpx;
+	margin-right: 28rpx;
+}
+
+
+//字体颜色
+$color : #FD7747;
+//背景主题色
+$bgColor : #FD7747;
+//页面背景色
+$pageColor : #F6F6F6;
+//小按钮渐变色
+$smallBtnColor:linear-gradient(90deg, #FD7747 0%, #FD7747 100%);
+//大按钮渐变色
+$btnColor : linear-gradient(270deg, #FD7747 0%, #FD7747 100%);
+@mixin defaultBtn {
+	height: 100rpx;
+	background: $bgColor;
+	border-radius: 50rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36rpx;
+	color:#FFFFFF;
+}
+.default-btn {
+	@include defaultBtn;
+}
+.default-submit {
+	@include defaultBtn;
+	background: $bgColor;
+}
+.mlr-20{
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+.plr-20{
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+
+
+
+
+@mixin createAnimation {
+	animation: uni-page-wrapper 0.3s;
+}
+// 页面载入动画
+
+@keyframes uni-page-wrapper {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.create-hidden{
+	animation: create-hidden 0.4s;
+	
+}
+
+@keyframes create-hidden {
+	0%{
+		display: none !important;
+	}
+	90%{
+		display: none !important;
+	}
+	100%{
+		opacity: none !important;
+	}
+}
